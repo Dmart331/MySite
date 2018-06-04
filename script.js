@@ -3,7 +3,7 @@ AFRAME.registerComponent('one-mouse-click', {
 
 	init: function () {
 		this.el.addEventListener('click', function () {
-			window.location = 'https://vine-bottom.glitch.me/About.html';
+			window.location = 'drewmartin.info/About.html';
 		});
 	}
 });
