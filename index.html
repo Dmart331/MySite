@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<title>Drew's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	body, h1, h2, h3, h4, h5, h6 {
+		font-family: "Lato", sans-serif
+	}
+
+	.w3-bar, h1, button {
+		margin-bottom: -500px;
+		font-family: "Montserrat", sans-serif
+	}
+
+	.fa-anchor, .fa-coffee {
+		font-size: 200px
+	}
+
+	#home {
+		height: 100%;
+	}
+
+	a-scene {
+		height: 100%;
+		padding-top: 500px;
+		display: block;
+		position: unset;
+		width: 100%;
+	}
+
+	.a-canvas {
+		height: 100%;
+		width: 100%;
+		left: 0;
+		position: absolute;
+		top: auto;
+	}
+
+	.makeBig {
+		height: 100%;
+	}
+
+	#myembeddedScene {
+		width: 90%;
+		height: 100%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	#Logo {
+		height: 150;
+		width: 500px;
+		margin-top: 10px;
+		margin-right: 20px;
+	}
+
+	@media screen and (max-width: 480px) {
+		#Logo {
+			width: 250px;
+			height: 125px;
+		}
+	}
+</style>
+<body>
+	<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+
+		<!--   <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+			<span class="w3-tag">Produced by BlackBox Realities</span>
+		  </div> -->
+	</header>
+	<!-- Navbar -->
+	<div class="makeBig">
+		<div class="w3-bar w3-grey w3-card w3-left-align w3-large">
+			<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+			<a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+			<a href="About.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Blog</a>
+
+
+			<!-- Navbar on small screens -->
+			<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+				<a href="About.html" class="w3-bar-item w3-button w3-padding-large">About</a>
+			</div>
+		</div>
+
+		<!-- Header -->
+		<!-- First Grid -->
+		<!-- Second Grid -->
+
+		<div id="myembeddedScene">
+
+			<a-scene embedded class="embedded">
+				<a-camera>
+					<!--       <a-cursor></a-cursor> -->
+					<a-entity id="msg" position="0 -0.3 -1.5" text="align:center;
+                width:3;
+                wrapCount:100;
+                color:red;
+                value:Click window to make the video play, if needed."
+							  hide-once-playing="#video">
+					</a-entity>
+				</a-camera>
+				<a-videosphere rotation="0 180 0" src="#video"
+							   play-on-window-click
+							   play-on-vrdisplayactivate-or-enter-vr>
+				</a-videosphere>
+				<a-sphere one-mouse-click position="0 1 4"></a-sphere>
+				<!--
+					<a-sky id="my-image" src="https://cdn.glitch.com/ee9056ad-5523-4d88-b775-f1ec53d79357%2FHelvellyn_Striding_Edge_360_Panorama%2C_Lake_District_-_June_09.jpg?1526928697407"></a-sky> -->
+				<a-assets>
+					<!-- Single source video. -->
+					<video id="video" style="display:none"
+						   autoplay loop crossorigin="anonymous" playsinline webkit-playsinline>
+						<!-- MP4 video source. -->
+						<source type="video/mp4"
+								src="https://ucarecdn.com/fadab25d-0b3a-45f7-8ef5-85318e92a261/" />
+					</video>
+				</a-assets>
+			</a-scene>
+		</div>
+
+		<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+		</script>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<title>Drew's Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+	h1 {
+		margin: 30px;
+	}
+
+	body, h1, h2, h3, h4, h5 {
+		font-family: "Raleway", sans-serif
+	}
+
+	.titleGif {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	.secondGif {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	.explination {
+		margin: 0 auto;
+		display: block;
+		text-align: justify;
+	}
+
+	.para {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		diplay: block;
+	}
+</style>
+<body class="w3-light-grey">
+	<div class="w3-top">
+		<div class="w3-bar w3-grey w3-card w3-left-align w3-large">
+			<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+			<a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+			<a href="About.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+
+
+			<!-- Navbar on small screens -->
+			<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+				<a href="About.html" class="w3-bar-item w3-button w3-padding-large">About</a>
+			</div>
+		</div>
+	</div>
+	<div class="w3-content" style="max-width:1400px">
+
+		<!-- Header -->
+		<header class="w3-container w3-center w3-padding-32">
+			<h1><b>What the Heck is AR</b></h1>
+			<p>Welcome to the blog of Drew Martin</p>
+		</header>
+
+		<!-- Grid -->
+		<div class="w3-row">
+
+			<!-- Blog entries -->
+			<div class="w3-col l8 s12">
+
+				<!-- Blog entry -->
+				<div class="w3-card-4 w3-margin w3-white">
+					<img src="https://cdn.glitch.com/ee9056ad-5523-4d88-b775-f1ec53d79357%2F1_K4v3T5GcJVDAxm3IOJ9mQw.jpeg?1526927124887" alt="Nature" style="width:100%">
+					<div class="w3-container">
+						<h3>What is Augmented Reality? <span class="w3-opacity">May 21, 2018</span></h3>
+
+					</div>
+
+					<div class="w3-container">
+						<p>
+							Most people ask me "What is AR" when I tell them that I am an AR Developer. The next question, most of the time, is "So is that like VR?".
+							This is a common question because most people have never been able to experience both of the technologies. The main difference between the two is, as a wise man once said, "AR brings things to you, while VR takes you there
+							". In other words. AR can bring something into your world, it can <i>augment</i> your surrounding reality. VR is different as it completely replaces your reality with a new one. Both are extremely exciting and offer
+							solotions to problems that we didn't even know we had before. Below are some examples of projects that I was able to work on
+						</p>
+						<div class="w3-row">
+						</div>
+					</div>
+				</div>
+				<hr>
+
+				<!-- Blog entry -->
+				<div class="w3-card-4 w3-margin w3-white">
+					<div class="w3-container">
+						<center> <h3><b>Object Recognition</b></h3></center>
+					</div>
+					<img class="titleGif" src="https://cdn.glitch.com/ee9056ad-5523-4d88-b775-f1ec53d79357%2FMicroChip.gif?1526921095900">
+
+					<div class="w3-container">
+
+						<div class="w3-row ">
+							<div class="para">
+								<p class="explination">
+									In the above example, you can see that with Augmented Reality we can take an object that most people aren't used to working with and highlighting different important areas - making it easier for the
+									user to use the product. The first time I put a computer together I looked at the motherboard and was instantly intemedated. I thought it would be helpful if you could point your phone at the board and
+									highlight the parts that I needed to worry about. The above example is my proof of concept. The user is able to click the highlighted components and get more information on them.
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<hr>
+
+				<div class="w3-card-4 w3-margin w3-white">
+					<div class="w3-container">
+						<center> <h3><b>Target Based Augmented Reality</b></h3></center>
+					</div>
+					<!-- <img class="titleGif" src="https://cdn.glitch.com/ee9056ad-5523-4d88-b775-f1ec53d79357%2Ftarget.gif?1528132287868">  -->
+					<img class="secondGif" src="https://cdn.glitch.com/ee9056ad-5523-4d88-b775-f1ec53d79357%2Ftarget.gif?1528132287868">
+
+
+					<div class="w3-container">
+
+						<div class="w3-row ">
+							<div class="para">
+								<p class="explination">
+									Target based AR works simalarly to object based recognition. The computer is looking for specfic tracking points on an image you have provided. This image can literally be for anything - making target based AR
+									extremely valuable for marketing. I enjoy making target based AR for a few reasons:
+
+									1: Target based AR gives the developer controll over the scene. I can build the experence based on where the target will be placed, or try to have fun and augment the target. In the above example, I am using
+									a texture of the target, made in photoshop, that is slightly more transparent and has no white background. This gives the illusion that the user is looking into whatever surface the target is printed on.
+
+									2: Target based AR leaves little room for error. If I were shipping an AR exibit to any sort of trade show, it will always be target based. Trade show floor can get loud and crouded. If the user has to worry about finding
+									a flat surface in order to trigger the experience they will loose intrest and not have a very good time.
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- END BLOG ENTRIES -->
+			</div>
+
+			<!-- Introduction menu -->
+			<div class="w3-col l4">
+				<!-- About Card -->
+				<div class="w3-card w3-margin w3-margin-top">
+					<img src="https://cdn.glitch.com/ee9056ad-5523-4d88-b775-f1ec53d79357%2Fdrew.jpg?1526921259468" style="width:100%">
+					<div class="w3-container w3-white">
+						<h4><b>Drew Martin</b></h4>
+						<p>I'm a very creative person. I've always known that I like to create but when I found Augmented Reality my creative personality took off. I love creating apps that make people excited or make them laugh and if I can solve some problems at the same time, that a plus!</p>
+					</div>
+				</div><hr>
+
+				<!-- Posts -->
+				<div class="w3-card w3-margin">
+					<div class="w3-container w3-padding">
+						<h4>Connect With Me</h4>
+					</div>
+					<ul class="w3-ul w3-hoverable w3-white">
+						<li class="w3-padding-16">
+							<a href="http://https://www.linkedin.com/in/drew-martin-230ba89a/">
+								<i class="fa fa-linkedin w3-hover-opacity w3-left w3-margin-right" style="width:50px"></i>
+								<span class="w3-large" style="text-decoration:none;">LinkedIn</span><br>
+							</a>
+						</li>
+
+						<li class="w3-padding-16">
+							<a href="https://www.facebook.com/Dmart331">
+								<i class="fa fa-facebook w3-hover-opacity w3-left w3-margin-right" style="width:50px"></i>
+								<span class="w3-large" style="text-decoration:none;">Facebook</span><br>
+							</a>
+						</li>
+
+						<li class="w3-padding-16">
+							<a href="https://github.com/dmart331">
+								<i class="fa fa-github w3-hover-opacity w3-left w3-margin-right" style="width:50px"></i>
+								<span class="w3-large" style="text-decoration:none;">GitHub</span><br>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<hr>
+
+				<!-- Labels / tags -->
+				<!-- END Introduction Menu -->
+			</div>
+
+			<!-- END GRID -->
+		</div><br>
+
+		<!-- END w3-content -->
+	</div>
+
+	<!-- Footer -->
+	<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top"></footer>
+
+	<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+	</script>
+</body>
+</html>
